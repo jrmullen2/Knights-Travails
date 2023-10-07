@@ -3,57 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Knights Travails</title>
+    <title>Knights' Travails</title>
   </head>
   <body>
-    <div id="inputs">
-      <div id="starting">
-        <label for="rowStart">Row to Start From:</label>
-        <select name="rowStart" id="rowStart">
-          <option value="0" class="option1">0</option>
-          <option value="1" class="option1">1</option>
-          <option value="2" class="option1">2</option>
-          <option value="3" class="option1">3</option>
-          <option value="4" class="option1">4</option>
-          <option value="5" class="option1">5</option>
-          <option value="6" class="option1">6</option>
-          <option value="7" class="option1">7</option>
-        </select>
-        <label for="columnStart">Column to Start From:</label>
-        <select name="columnStart" id="columnStart">
-          <option value="0" class="option2">0</option>
-          <option value="1" class="option2">1</option>
-          <option value="2" class="option2">2</option>
-          <option value="3" class="option2">3</option>
-          <option value="4" class="option2">4</option>
-          <option value="5" class="option2">5</option>
-          <option value="6" class="option2">6</option>
-          <option value="7" class="option2">7</option>
-        </select>
-      </div>
-      <div id="ending">
-        <label for="rowEnd">Row to End At:</label>
-        <select name="rowEnd" id="rowEnd">
-          <option value="0" class="option3">0</option>
-          <option value="1" class="option3">1</option>
-          <option value="2" class="option3">2</option>
-          <option value="3" class="option3">3</option>
-          <option value="4" class="option3">4</option>
-          <option value="5" class="option3">5</option>
-          <option value="6" class="option3">6</option>
-          <option value="7" class="option3">7</option>
-        </select>
-        <label for="columnEnd">Column to End At:</label>
-        <select name="columnEnd" id="columnEnd">
-          <option value="0" class="option4">0</option>
-          <option value="1" class="option4">1</option>
-          <option value="2" class="option4">2</option>
-          <option value="3" class="option4">3</option>
-          <option value="4" class="option4">4</option>
-          <option value="5" class="option4">5</option>
-          <option value="6" class="option4">6</option>
-          <option value="7" class="option4">7</option>
-        </select>
+    <div id="header">
+      <div id="inputs">
+        <div id="row">
+          <label for="rowStart" class="starting">Starting Row:</label>
+          <select name="rowStart" id="rowStart" class="starting">
+            <option value="0" class="option1">0</option>
+            <option value="1" class="option1">1</option>
+            <option value="2" class="option1">2</option>
+            <option value="3" class="option1">3</option>
+            <option value="4" class="option1">4</option>
+            <option value="5" class="option1">5</option>
+            <option value="6" class="option1">6</option>
+            <option value="7" class="option1">7</option>
+          </select>
+          <label for="rowEnd" class="ending">Ending Row:</label>
+          <select name="rowEnd" id="rowEnd" class="ending">
+            <option value="0" class="option3">0</option>
+            <option value="1" class="option3">1</option>
+            <option value="2" class="option3">2</option>
+            <option value="3" class="option3">3</option>
+            <option value="4" class="option3">4</option>
+            <option value="5" class="option3">5</option>
+            <option value="6" class="option3">6</option>
+            <option value="7" class="option3">7</option>
+          </select>
+        </div>
+        <div id="column">
+          <label for="columnStart" class="starting">Starting Column:</label>
+          <select name="columnStart" id="columnStart" class="starting">
+            <option value="0" class="option2">0</option>
+            <option value="1" class="option2">1</option>
+            <option value="2" class="option2">2</option>
+            <option value="3" class="option2">3</option>
+            <option value="4" class="option2">4</option>
+            <option value="5" class="option2">5</option>
+            <option value="6" class="option2">6</option>
+            <option value="7" class="option2">7</option>
+          </select>
+          <label for="columnEnd" class="ending">Ending Column:</label>
+          <select name="columnEnd" id="columnEnd" class="ending">
+            <option value="0" class="option4">0</option>
+            <option value="1" class="option4">1</option>
+            <option value="2" class="option4">2</option>
+            <option value="3" class="option4">3</option>
+            <option value="4" class="option4">4</option>
+            <option value="5" class="option4">5</option>
+            <option value="6" class="option4">6</option>
+            <option value="7" class="option4">7</option>
+          </select>
+        </div>
       </div>
       <div id="buttons">
         <button id="confirm">Confirm</button>
@@ -61,7 +63,6 @@
       </div>
       <div id="shortPath">The shortest path is:</div>
     </div>
-
     <div id="mainContainer">
       <div id="leftContainer">
         <div>7</div>
